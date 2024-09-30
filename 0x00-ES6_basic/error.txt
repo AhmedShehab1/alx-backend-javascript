@@ -1,0 +1,16 @@
+
+/home/user/backend/alx-backend-javascript/0x00-ES6_basic/10-loops.js
+  4:5  error  Assignment to property of function parameter 'array'  no-param-reassign
+
+/home/user/backend/alx-backend-javascript/0x00-ES6_basic/1-block-scoped.js
+  6:11  error  'task' is assigned a value but never used   no-unused-vars
+  7:11  error  'task2' is assigned a value but never used  no-unused-vars
+
+/home/user/backend/alx-backend-javascript/0x00-ES6_basic/9-getFullBudget.js
+  1:29  error  Unexpected use of file extension "js" for "./7-getBudgetObject.js"  import/extensions
+
+/home/user/backend/alx-backend-javascript/0x00-ES6_basic/main.js
+  1:23  error  Unexpected use of file extension "js" for "./1-block-scoped.js"  import/extensions
+
+✖ 5 problems (5 errors, 0 warnings)
+
