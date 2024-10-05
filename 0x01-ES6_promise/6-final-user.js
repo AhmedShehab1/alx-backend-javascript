@@ -6,9 +6,14 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
   const p2 = uploadPhoto(fileName);
 
   return Promise.allSettled([p1, p2]).then((results) => {
-    results.forEach((result) => ({
-      status: result.status,
-      value: result.value || result.reason,
-    }));
+    const newArray = [];
+    results.forEach((result) => {
+      newArray.push({
+        status: result.status,
+        value: result.status === 'fulfilled' ? result.value : String(result.reason),
+      });
+    });
+
+    return newArray;
   });
 }
