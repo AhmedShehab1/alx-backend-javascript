@@ -6,5 +6,6 @@ export default function cleanSet(set, startString) {
   return arr
     .filter((str) => str.startsWith(startString))
 	    	 .map((str) => str.substr(startString.length))
+		.filter((str) => str)
     .join('-');
 }
