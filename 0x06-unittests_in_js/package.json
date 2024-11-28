@@ -1,0 +1,15 @@
+{
+	"name": "Unittesting_In_JS",
+	"version": "1.0.0",
+	"scripts": {
+		"test": "mocha"
+	},
+	"author": "Ahmed Shehab",
+	"license": "ISC",
+	"devDependencies": {
+		"chai": "^4.3.7",
+		"mocha": "^10.8.2",
+		"sinon": "^19.0.2",
+		"supertest": "^7.0.0"
+	}
+}
