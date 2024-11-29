@@ -1,13 +1,14 @@
 /* eslint-disable */
 import fs from 'fs';
 
+
 const readDatabase = (filePath) => {
   const promise = new Promise((resolve, reject) => {
     fs.readFile(filePath, 'utf8', (err, content) => {
       if (err) {
         reject(new Error('Cannot load the database'));
       } else {
-	      const students = content.trim().split('\n').slice();
+	      const students = content.trim().split('\n').slice(1);
 	      const fields = {};
 
 	      students.forEach((row) => {
