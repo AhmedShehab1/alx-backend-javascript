@@ -7,7 +7,7 @@ const readDatabase = (filePath) => {
       if (err) {
         reject(new Error('Cannot load the database'));
       } else {
-	      const students = data.trim().split('\n').slice();
+	      const students = content.trim().split('\n').slice();
 	      const fields = {};
 
 	      students.forEach((row) => {
@@ -23,4 +23,3 @@ const readDatabase = (filePath) => {
 };
 
 export default readDatabase;
-
