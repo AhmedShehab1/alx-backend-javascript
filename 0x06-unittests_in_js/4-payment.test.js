@@ -13,7 +13,7 @@ describe('sendPaymentRequestToApi', () => {
         expect(stub.calledOnce).to.be.true;
         expect(stub.calledWithExactly('SUM', 100, 20)).to.be.true;
         
-        stub.restore();
+        sinon.restore();
 
     });
 });
